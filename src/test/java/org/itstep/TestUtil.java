@@ -38,6 +38,8 @@ public class TestUtil {
             return rnd.nextLong();
         } else if(byte.class.equals(clazz)) {
             return (byte)rnd.nextInt(100);
+        } else if(double.class.equals(clazz)) {
+            return rnd.nextDouble();
         }
         return null;
     }
